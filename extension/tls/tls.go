@@ -1,9 +1,9 @@
 package tls
 
 import (
+	"github.com/ghp3000/nbio"
+	"github.com/ghp3000/nbio/mempool"
 	"github.com/lesismal/llib/std/crypto/tls"
-	"github.com/lesismal/nbio"
-	"github.com/lesismal/nbio/mempool"
 )
 
 // Conn .

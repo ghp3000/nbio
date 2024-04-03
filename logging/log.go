@@ -19,7 +19,7 @@ var (
 	Output io.Writer = os.Stdout
 
 	// DefaultLogger is the default logger and is used by arpc.
-	DefaultLogger Logger = &logger{level: LevelInfo}
+	DefaultLogger Logger = &logger{level: LevelNone}
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lesismal/nbio/logging"
+	"github.com/ghp3000/nbio/logging"
 )
 
 type event struct {

@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lesismal/nbio/timer"
+	"github.com/ghp3000/nbio/timer"
 )
 
 // Conn wraps net.Conn.
@@ -39,6 +39,8 @@ type Conn struct {
 
 	// user session.
 	session interface{}
+	// user extra data
+	extra interface{}
 
 	execList []func()
 
@@ -461,6 +463,16 @@ func (c *Conn) Session() interface{} {
 // SetSession sets user session.
 func (c *Conn) SetSession(session interface{}) {
 	c.session = session
+}
+
+// Extra returns user session.
+func (c *Conn) Extra() interface{} {
+	return c.extra
+}
+
+// SetExtra sets user session.
+func (c *Conn) SetExtra(extra interface{}) {
+	c.session = extra
 }
 
 func newConn(conn net.Conn) *Conn {

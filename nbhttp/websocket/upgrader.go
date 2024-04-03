@@ -16,10 +16,10 @@ import (
 	"unicode/utf8"
 	"unsafe"
 
+	"github.com/ghp3000/nbio"
+	"github.com/ghp3000/nbio/logging"
+	"github.com/ghp3000/nbio/nbhttp"
 	"github.com/lesismal/llib/std/crypto/tls"
-	"github.com/lesismal/nbio"
-	"github.com/lesismal/nbio/logging"
-	"github.com/lesismal/nbio/nbhttp"
 )
 
 var (

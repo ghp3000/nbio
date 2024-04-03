@@ -10,7 +10,7 @@ package nbio
 import (
 	"syscall"
 
-	"github.com/lesismal/nbio/mempool"
+	"github.com/ghp3000/nbio/mempool"
 )
 
 func writev(fd int, iovs [][]byte) (int, error) {

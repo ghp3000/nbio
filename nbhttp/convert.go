@@ -7,8 +7,8 @@ import (
 	"net"
 	"unsafe"
 
+	"github.com/ghp3000/nbio"
 	ltls "github.com/lesismal/llib/std/crypto/tls"
-	"github.com/lesismal/nbio"
 )
 
 const (

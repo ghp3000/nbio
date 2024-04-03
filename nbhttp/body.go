@@ -8,7 +8,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/lesismal/nbio/mempool"
+	"github.com/ghp3000/nbio/mempool"
 )
 
 var (

@@ -13,7 +13,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/lesismal/nbio/logging"
+	"github.com/ghp3000/nbio/logging"
 )
 
 const (

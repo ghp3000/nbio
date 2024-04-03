@@ -12,9 +12,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/lesismal/nbio/logging"
-	"github.com/lesismal/nbio/taskpool"
-	"github.com/lesismal/nbio/timer"
+	"github.com/ghp3000/nbio/logging"
+	"github.com/ghp3000/nbio/taskpool"
+	"github.com/ghp3000/nbio/timer"
 )
 
 // Start init and start pollers.

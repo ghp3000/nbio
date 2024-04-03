@@ -5,8 +5,8 @@ import (
 	"net"
 	"testing"
 
+	"github.com/ghp3000/nbio"
 	ltls "github.com/lesismal/llib/std/crypto/tls"
-	"github.com/lesismal/nbio"
 )
 
 func TestConn2String(t *testing.T) {

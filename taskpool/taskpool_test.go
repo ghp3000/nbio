@@ -7,7 +7,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/lesismal/nbio/logging"
+	"github.com/ghp3000/nbio/logging"
 )
 
 const testLoopNum = 1024
