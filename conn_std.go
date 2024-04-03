@@ -472,7 +472,7 @@ func (c *Conn) Extra() interface{} {
 
 // SetExtra sets user session.
 func (c *Conn) SetExtra(extra interface{}) {
-	c.session = extra
+	c.extra = extra
 }
 
 func newConn(conn net.Conn) *Conn {
