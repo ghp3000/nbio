@@ -91,6 +91,8 @@ type Conn struct {
 	ReadBuffer []byte
 
 	session interface{}
+	// user extra data
+	extra interface{}
 
 	execList []func()
 
@@ -474,6 +476,16 @@ func (c *Conn) Session() interface{} {
 // SetSession sets user session.
 func (c *Conn) SetSession(session interface{}) {
 	c.session = session
+}
+
+// Extra returns user session.
+func (c *Conn) Extra() interface{} {
+	return c.extra
+}
+
+// SetExtra sets user session.
+func (c *Conn) SetExtra(extra interface{}) {
+	c.extra = extra
 }
 
 func (c *Conn) modWrite() {

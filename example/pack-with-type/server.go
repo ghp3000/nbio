@@ -50,7 +50,10 @@ func main() {
 	g.OnClose(nbtls.WrapClose(func(c *nbio.Conn, tlsConn *tls.Conn, err error) {
 		fmt.Println("OnClose:", c.RemoteAddr().String())
 	}))
-
+	g.OnRead(func(c *nbio.Conn) {
+		b := bytes.NewBuffer(nil)
+		b.Bytes()
+	})
 	g.OnData(nbtls.WrapData(func(c *nbio.Conn, tlsConn *tls.Conn, data []byte) {
 		iExtra := c.Extra()
 		if iExtra == nil {

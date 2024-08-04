@@ -2,9 +2,9 @@ package main
 
 import (
 	"bytes"
+	"crypto/tls"
 	"encoding/binary"
 	"fmt"
-	"github.com/ghp3000/nbio/extension/tls"
 	"time"
 )
 
